@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.catgory {
+    width: 1331px;
+    height: 350px;
+}
+
+.catgory-p p {
+    color: black;
+    font-family: "font";
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-right: 16px;
+    font-size: 22px;
+}
+
+.catgory-products {
+    display: flex;
+    justify-content: center;
+    gap: 59px;
+}
+
+.catgory-product img {
+    width: 90px;
+    height: 90px;
+
+}
+
+.catgory-product {
+    margin-top: 20px;
+}
+
+.catgory-product p {
+    font-family: "font";
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+.catgory-product a {
+    text-decoration: none;
+}

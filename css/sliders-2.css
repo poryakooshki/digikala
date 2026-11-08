@@ -22,10 +22,11 @@
 }
 
 .vitamins-head-p p {
+    width: 500px;
     color: black;
     font-family: 'font';
     font-size: 23px;
-    margin-left: 918px;
+    margin-left: 615px;
     margin-right: 11px;
 }
 
@@ -66,6 +67,7 @@ swiper-container {
 }
 
 swiper-slide {
+    margin-top: -8px;
     width: 165px !important;
     margin-left: 30px;
     height: 275px !important;
@@ -114,6 +116,10 @@ swiper-slide {
     display: flex;
     justify-content: end;
     margin: 6px 16px;
+}
+
+.vitamin-product-off-price p {
+    opacity: 0.8;
 }
 
 .vitamin-product-off-price img {

@@ -391,3 +391,15 @@ body {
     font-family: "font";
     font-size: 12px;
 }
+
+.two-image {
+    display: flex;
+    gap: 20px;
+    margin: -16px 16px;
+}
+
+.two-image img {
+    width: 645px;
+    height: 255px;
+    border-radius: 15px;
+}

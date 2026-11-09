@@ -1396,9 +1396,7 @@
                     <div class="vitamin-product-real-price">
                         <b>47%</b>
                         <p>
-                            <del>
-                                45,000,000
-                            </del>
+                            <del>45,000,000</del>
                         </p>
                     </div>
                     <div class="vitamin-product-off-price">
@@ -1410,7 +1408,52 @@
         </swiper-container>
     </div>
 
+    <div class="best-sellers">
 
+        <div class="best-sellers-top">
+            <p>🔥پر فروش ترین ها</p>
+        </div>
+
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="best-sellers-bottom">
+                        <img src="./images/kif-kelasory.webp" alt="">
+                        <div class="best-sellers-bottom-caption"></div>
+                        <b>1</b>
+                        <p>کیف کلاسوری دیامانته مدل Scusa Bk مناسب برای گوشی موبایل شیائومی Poco C65 به همراه بند آویز
+                        </p>
+                    </div>
+                    <div class="best-sellers-bottom">
+                        <img src="./images/kif-kelasory.webp" alt="">
+                        <div class="best-sellers-bottom-caption"></div>
+                        <b>1</b>
+                        <p>کیف کلاسوری دیامانته مدل Scusa Bk مناسب برای گوشی موبایل شیائومی Poco C65 به همراه بند آویز
+                        </p>
+                    </div>
+                    <div class="best-sellers-bottom">
+                        <img src="./images/kif-kelasory.webp" alt="">
+                        <div class="best-sellers-bottom-caption"></div>
+                        <b>1</b>
+                        <p>کیف کلاسوری دیامانته مدل Scusa Bk مناسب برای گوشی موبایل شیائومی Poco C65 به همراه بند آویز
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+                <div class="swiper-slide">Resize me!</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
 
 
     <br>
@@ -1421,45 +1464,86 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
 
     <script>
-        const swiperEl = document.querySelector('swiper-container');
-        const swiper = swiperEl.swiper;
+        document.querySelectorAll('.slider-box').forEach((box) => {
 
-        var appendNumber = 4;
-        var prependNumber = 1;
-        document
-            .querySelector('.prepend-2-slides')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.prependSlide([
-                    '<swiper-slide>Slide ' + --prependNumber + '</swiper-slide>',
-                    '<swiper-slide>Slide ' + --prependNumber + '</swiper-slide>',
-                ]);
-            });
-        document
-            .querySelector('.prepend-slide')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.prependSlide(
-                    '<swiper-slide>Slide ' + --prependNumber + '</swiper-slide>'
-                );
-            });
-        document
-            .querySelector('.append-slide')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.appendSlide(
-                    '<swiper-slide>Slide ' + ++appendNumber + '</swiper-slide>'
-                );
-            });
-        document
-            .querySelector('.append-2-slides')
-            .addEventListener('click', function (e) {
-                e.preventDefault();
-                swiper.appendSlide([
-                    '<swiper-slide>Slide ' + ++appendNumber + '</swiper-slide>',
-                    '<swiper-slide>Slide ' + ++appendNumber + '</swiper-slide>',
-                ]);
-            });
+            const swiperEl = box.querySelector('swiper-container');
+
+            const initSwiper = () => {
+                const swiper = swiperEl.swiper;
+
+                if (!swiper) return;
+
+                let appendNumber = 4;
+                let prependNumber = 1;
+
+                box.querySelector('.prepend-2-slides')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    swiper.prependSlide([
+                        `<swiper-slide>Slide ${--prependNumber}</swiper-slide>`,
+                        `<swiper-slide>Slide ${--prependNumber}</swiper-slide>`
+                    ]);
+                });
+
+                box.querySelector('.prepend-slide')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    swiper.prependSlide(
+                        `<swiper-slide>Slide ${--prependNumber}</swiper-slide>`
+                    );
+                });
+
+                box.querySelector('.append-slide')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    swiper.appendSlide(
+                        `<swiper-slide>Slide ${++appendNumber}</swiper-slide>`
+                    );
+                });
+
+                box.querySelector('.append-2-slides')?.addEventListener('click', (e) => {
+                    e.preventDefault();
+
+                    swiper.appendSlide([
+                        `<swiper-slide>Slide ${++appendNumber}</swiper-slide>`,
+                        `<swiper-slide>Slide ${++appendNumber}</swiper-slide>`
+                    ]);
+                });
+            };
+
+            if (swiperEl.swiper) {
+                initSwiper();
+            } else {
+                swiperEl.addEventListener('swiperinit', initSwiper, { once: true });
+            }
+
+        });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-3', {
+            slidesPerView: 3,
+            direction: getDirection(),
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            on: {
+                resize: function () {
+                    swiper.changeDirection(getDirection());
+                },
+            },
+        });
+
+        function getDirection() {
+            var windowWidth = window.innerWidth;
+            var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+            return direction;
+        }
     </script>
 </body>
 

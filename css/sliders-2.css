@@ -9,6 +9,7 @@
 }
 
 .vitamins {
+    direction: rtl;
     width: 1300px;
     height: 379px;
     border: 1px solid #dedfe0;
@@ -66,10 +67,19 @@ swiper-container {
     height: 100%;
 }
 
+swiper-container.mySwiper {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+    direction: rtl;
+}
+
 swiper-slide {
+    margin: 10px 0 0 0;
+    flex-shrink: 0;
     margin-top: -8px;
     width: 165px !important;
-    margin-left: 30px;
     height: 275px !important;
     text-align: center;
     font-size: 18px;
@@ -81,82 +91,91 @@ swiper-slide {
     font-family: "font";
 }
 
-.vitamin-product-real-price b {
-    background-color: #d32f2f;
-    color: white;
-    width: 34px;
-    height: 19px;
-    border-radius: 13px;
-    text-align: center;
+.vitamins swiper-slide {
+    transform: translateY(10px);
 }
 
-.vitamin-product-cap {
-    font-size: 13px;
-    margin: 0px 8px;
-    text-align: justify;
-    opacity: 0.8;
-    display: -webkit-box;
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
-    box-orient: vertical;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
+.vitamins swiper-container {
+    padding-right: 20px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 
-.vitamin-product-real-price {
-    display: flex;
-    justify-content: end;
-    gap: 10px;
-    font-size: 14px;
-    margin: 0px 8px;
-}
+    .vitamin-product-real-price b {
+        background-color: #d32f2f;
+        color: white;
+        width: 34px;
+        height: 19px;
+        border-radius: 13px;
+        text-align: center;
+    }
+
+    .vitamin-product-cap {
+        font-size: 13px;
+        margin: 0px 8px;
+        text-align: justify;
+        opacity: 0.8;
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        box-orient: vertical;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .vitamin-product-real-price {
+        display: flex;
+        justify-content: end;
+        gap: 10px;
+        font-size: 14px;
+        margin: 0px 8px;
+    }
 
 
-.vitamin-product-off-price {
-    display: flex;
-    justify-content: end;
-    margin: 6px 16px;
-}
+    .vitamin-product-off-price {
+        display: flex;
+        justify-content: end;
+        margin: 6px 16px;
+    }
 
-.vitamin-product-off-price p {
-    opacity: 0.8;
-}
+    .vitamin-product-off-price p {
+        opacity: 0.8;
+    }
 
-.vitamin-product-off-price img {
-    width: 18px;
-    height: 14px;
-}
+    .vitamin-product-off-price img {
+        width: 18px;
+        height: 14px;
+    }
 
-.vitamin-product-img img {
-    width: 165px;
-}
+    .vitamin-product-img img {
+        width: 165px;
+    }
 
-swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-swiper-container {
-    width: 100%;
-    height: 300px;
-    margin: 20px auto;
-}
+    swiper-container {
+        width: 100%;
+        height: 300px;
+        margin: 20px auto;
+    }
 
-.append-buttons {
-    text-align: center;
-    margin-top: 20px;
-}
+    .append-buttons {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-.append-buttons button {
-    display: inline-block;
-    cursor: pointer;
-    border: 1px solid #007aff;
-    color: #007aff;
-    text-decoration: none;
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin: 0 10px;
-    font-size: 13px;
-}
+    .append-buttons button {
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #007aff;
+        color: #007aff;
+        text-decoration: none;
+        padding: 4px 10px;
+        border-radius: 4px;
+        margin: 0 10px;
+        font-size: 13px;
+    }

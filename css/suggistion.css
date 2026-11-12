@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sug {
+    width: 100%;
+}
+
+.sug-special {
+    width: 410px;
+    height: 26px;
+}
+
+.sug-products {
+    margin: 20px 16px;
+    display: flex;
+}
+
+.sug-product-1 {
+    border-left: 1px solid #e2e2e3;
+    border-bottom: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    padding: 15px;
+}
+
+.sug-product-1:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-2 {
+    border-right: 1px solid #e2e2e3;
+    border-left: 1px solid #e2e2e3;
+    border-bottom: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    padding: 15px;
+}
+
+.sug-product-2:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-3 {
+    border-right: 1px solid #e2e2e3;
+    border-bottom: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    padding: 15px;
+}
+
+.sug-product-3:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-4 {
+    border-top: 1px solid #e2e2e3;
+    border-left: 1px solid #e2e2e3;
+    border-bottom: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    position: relative;
+    bottom: 21px;
+    padding: 15px;
+}
+
+.sug-product-4:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-5 {
+    border: 1px solid #e2e2e3;
+    width: 430px;
+    position: relative;
+    bottom: 21px;
+    height: 422px;
+    padding: 15px;
+}
+
+.sug-product-5:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-6 {
+    position: relative;
+    bottom: 21px;
+    border-top: 1px solid #e2e2e3;
+    border-right: 1px solid #e2e2e3;
+    border-bottom: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    padding: 15px;
+}
+
+.sug-product-6:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-7 {
+    border-left: 1px solid #e2e2e3;
+    border-top: 1px solid #e2e2e3;
+    border-bottom: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    position: relative;
+    bottom: 42px;
+    padding: 15px;
+}
+
+.sug-product-7:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-8 {
+    border-bottom: 1px solid #e2e2e3;
+    position: relative;
+    bottom: 42px;
+    border-right: 1px solid #e2e2e3;
+    border-top: 1px solid #e2e2e3;
+    border-left: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    padding: 15px;
+}
+
+.sug-product-8:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-9 {
+    border-bottom: 1px solid #e2e2e3;
+    position: relative;
+    bottom: 42px;
+    border-right: 1px solid #e2e2e3;
+    border-top: 1px solid #e2e2e3;
+    width: 430px;
+    height: 422px;
+    padding: 15px;
+}
+
+.sug-product-9:hover {
+    box-shadow: 0px 0px 5px gray;
+}
+
+.sug-product-img {
+    display: flex;
+    width: 100%;
+    height: 240px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sug-product img {
+    width: 240px;
+    height: 240px;
+}
+
+.sug-product-cap {
+    margin: 51px 0px;
+}
+
+.sug-product-cap h3 {
+    font-family: "font";
+    font-size: 12px;
+    margin: 0px 8px;
+    text-align: justify;
+    opacity: 0.8;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    box-orient: vertical;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: black;
+}
+
+.sug-products-stars {
+    display: flex;
+    width: 100%;
+    position: relative;
+    bottom: 37px;
+    height: 26px;
+}
+
+.sug-products-stars img {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    right: 377px;
+}
+
+.sug-products-stars p {
+    color: black;
+    opacity: 0.8;
+    font-family: "font";
+    font-size: 13px;
+    position: relative;
+    right: 369px;
+
+}
+
+
+
+
+.sug-products-price {
+    display: flex;
+    width: 100%;
+    height: 33px;
+    justify-content: end;
+    position: relative;
+    left: 9px;
+    bottom: 26px;
+}
+
+.sug-products-price img {
+    width: 16px;
+    height: 16px;
+}
+
+.sug-products-price b {
+    color: black;
+    opacity: 0.8;
+    font-family: 'font';
+    position: relative;
+    bottom: 4px
+}
+
+.sug-products-price p {
+    background-color: #d32f2f;
+    font-family: 'font';
+    position: relative;
+    bottom: 4px;
+    position: relative;
+    left: 284px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 29px;
+    height: fit-content;
+    border-radius: 42%;
+    color: white;
+}
